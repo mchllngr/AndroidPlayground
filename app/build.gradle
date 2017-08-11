@@ -59,6 +59,15 @@ android {
         }
     }
 
+    // for merging res-folders together
+    sourceSets {
+        main {
+            file('src/main/res-screen')
+                    .listFiles()
+                    .each { res.srcDirs += it.path }
+        }
+    }
+
     // Always show the result of every unit test, even if it passes.
     testOptions.unitTests.all {
         testLogging {

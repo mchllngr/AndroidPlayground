@@ -3,7 +3,7 @@ package de.mchllngr.androidplayground.injection;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import de.mchllngr.androidplayground.module.main.MainPresenter;
+import de.mchllngr.androidplayground.module.blank.BlankPresenter;
 
 /**
  * Dagger2-component for the whole application.
@@ -12,5 +12,5 @@ import de.mchllngr.androidplayground.module.main.MainPresenter;
 @Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
 
-    void inject(MainPresenter presenter);
+    void inject(BlankPresenter presenter);
 }
