@@ -12,6 +12,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.mchllngr.androidplayground.R;
 import de.mchllngr.androidplayground.base.BaseActivity;
+import de.mchllngr.androidplayground.module.fragmentTheme.fragment.FragmentThemeOneFragment;
+import de.mchllngr.androidplayground.util.FragmentStarter;
 
 /**
  * {@link android.app.Activity} for setting a Theme for each Fragment.
@@ -20,14 +22,8 @@ import de.mchllngr.androidplayground.base.BaseActivity;
  */
 public class FragmentThemeActivity extends BaseActivity<FragmentThemeView, FragmentThemePresenter> implements FragmentThemeView {
 
-    /**
-     * {@link Toolbar} for this {@link android.app.Activity}.
-     */
     @BindView(R.id.toolbar) Toolbar toolbar;
 
-    /**
-     * Static factory method that initializes and starts the {@link android.app.Activity}.
-     */
     public static void start(@NonNull Context context) {
         Intent starter = new Intent(context, FragmentThemeActivity.class);
         context.startActivity(starter);
@@ -46,6 +42,9 @@ public class FragmentThemeActivity extends BaseActivity<FragmentThemeView, Fragm
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         setActionBarTitle(R.string.fragment_theme_activity_name);
+
+        if (getSupportFragmentManager().getBackStackEntryCount() == 0)
+            FragmentStarter.startFragment(getSupportFragmentManager(), new FragmentThemeOneFragment(), "FragmentThemeOneFragment", R.id.fl_fragment_container);
     }
 
     @NonNull

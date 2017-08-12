@@ -15,21 +15,21 @@
         android:paddingTop="@dimen/activity_vertical_margin">
 
         <android.support.design.widget.TextInputLayout
-            style="@style/FragmentTheme.TextInputLayout.First">
+            style="@style/SavingData.TextInputLayout.First">
 
             <EditText
                 android:id="@+id/et_static"
-                style="@style/FragmentTheme.EditText"
+                style="@style/SavingData.EditText"
                 android:hint="@string/saving_data_hint_static"/>
 
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            style="@style/FragmentTheme.TextInputLayout">
+            style="@style/SavingData.TextInputLayout">
 
             <EditText
                 android:id="@+id/et_in_fragment"
-                style="@style/FragmentTheme.EditText"
+                style="@style/SavingData.EditText"
                 android:hint="@string/saving_data_hint_in_fragment"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/btn_saving_data"
-        style="@style/FragmentTheme.Button"
+        style="@style/SavingData.Button"
         android:layout_alignParentBottom="true"
         android:text="@string/saving_data_button_text"/>
 

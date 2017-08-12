@@ -2,5 +2,17 @@
 <resources>
 
     <string name="fragment_theme_activity_name">FragmentTheme</string>
+    <string name="fragment_theme_button_text">Next Fragment</string>
+
+    <string name="fragment_theme_fragment_one_name">FragmentTheme (1)</string>
+    <string name="fragment_theme_fragment_two_name">FragmentTheme (2)</string>
+    <string name="fragment_theme_fragment_three_name">FragmentTheme (3)</string>
+
+    <string name="fragment_theme_text_view_text">TextView</string>
+    <string name="fragment_theme_edit_text_hint">EditText Hint</string>
+    <string name="fragment_theme_check_box_text">CheckBox</string>
+    <string name="fragment_theme_switch_text">Switch</string>
+    <string name="fragment_theme_radio_button_text_1">RadioButton 1</string>
+    <string name="fragment_theme_radio_button_text_2">RadioButton 2</string>
 
 </resources>

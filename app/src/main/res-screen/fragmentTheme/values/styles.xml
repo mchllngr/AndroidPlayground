@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="SavingData.TextInputLayout.First" parent="Widget.Design.TextInputLayout">
+    <style name="FragmentTheme.TextInputLayout.First" parent="Widget.Design.TextInputLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="SavingData.TextInputLayout" parent="SavingData.TextInputLayout.First">
+    <style name="FragmentTheme.TextInputLayout" parent="FragmentTheme.TextInputLayout.First">
         <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
     </style>
 
-    <style name="SavingData.EditText" parent="android:Widget.TextView">
+    <style name="FragmentTheme.EditText" parent="android:Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="SavingData.Button" parent="AppTheme.Button">
+    <style name="FragmentTheme.Button" parent="AppTheme.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
