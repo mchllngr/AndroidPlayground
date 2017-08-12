@@ -12,6 +12,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.mchllngr.androidplayground.R;
 import de.mchllngr.androidplayground.base.BaseActivity;
+import de.mchllngr.androidplayground.module.savingData.fragment.SavingDataOneFragment;
+import de.mchllngr.androidplayground.util.FragmentStarter;
 
 /**
  * {@link android.app.Activity} for testing ways to save data across multiple screens.
@@ -40,7 +42,9 @@ public class SavingDataActivity extends BaseActivity<SavingDataView, SavingDataP
         setContentView(R.layout.activity_saving_data);
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
-        toolbar.setTitle(R.string.saving_data_activity_name);
+        setActionBarTitle(R.string.saving_data_activity_name);
+
+        FragmentStarter.startFragment(getSupportFragmentManager(), SavingDataOneFragment.newInstance(), "SavingDataOneFragment", R.id.fl_fragment_container);
     }
 
     @NonNull

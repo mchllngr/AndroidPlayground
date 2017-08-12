@@ -12,8 +12,7 @@ import com.hannesdorfmann.mosby3.mvp.MvpView;
  * @param <V> view-interface for this fragment
  * @param <P> presenter for this fragment
  */
-public abstract class BaseFragment<V extends MvpView, P extends MvpBasePresenter<V>>
-        extends MvpFragment<V, P> {
+public abstract class BaseFragment<V extends MvpView, P extends MvpBasePresenter<V>> extends MvpFragment<V, P> {
 
     /**
      * Sets the title for the {@link android.support.v7.app.ActionBar} in the

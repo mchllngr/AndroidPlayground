@@ -14,6 +14,7 @@ import butterknife.OnClick;
 import de.mchllngr.androidplayground.R;
 import de.mchllngr.androidplayground.base.BaseActivity;
 import de.mchllngr.androidplayground.module.blank.BlankActivity;
+import de.mchllngr.androidplayground.module.fragmentTheme.FragmentThemeActivity;
 import de.mchllngr.androidplayground.module.savingData.SavingDataActivity;
 
 /**
@@ -62,5 +63,10 @@ public class MainActivity extends BaseActivity<MainView, MainPresenter> implemen
     @OnClick(R.id.btn_main_open_saving_data)
     public void openSavingDataActivity() {
         SavingDataActivity.start(this);
+    }
+
+    @OnClick(R.id.btn_main_open_fragment_theme)
+    public void openFragmentThemeActivity() {
+        FragmentThemeActivity.start(this);
     }
 }

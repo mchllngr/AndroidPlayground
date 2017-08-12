@@ -2,5 +2,12 @@
 <resources>
 
     <string name="saving_data_activity_name">SavingData</string>
+    <string name="saving_data_button_text">Next Fragment</string>
+
+    <string name="saving_data_fragment_one_name">SavingData (1)</string>
+    <string name="saving_data_fragment_two_name">SavingData (2)</string>
+    <string name="saving_data_fragment_three_name">SavingData (3)</string>
+
+    <string name="saving_data_hint_static">Static</string>
 
 </resources>

@@ -14,16 +14,19 @@
 
     <Button
         android:id="@+id/btn_main_open_blank"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Main.Button.First"
         android:text="@string/main_button_open_blank"/>
 
     <Button
         android:id="@+id/btn_main_open_saving_data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Main.Button"
         android:layout_below="@id/btn_main_open_blank"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="@string/main_button_open_saving_data"/>
+
+    <Button
+        android:id="@+id/btn_main_open_fragment_theme"
+        style="@style/Main.Button"
+        android:layout_below="@id/btn_main_open_saving_data"
+        android:text="@string/main_button_open_fragment_theme"/>
 
 </RelativeLayout>

@@ -20,13 +20,21 @@
 
         <activity
             android:name=".module.blank.BlankActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="@string/blank_activity_name"/>
+            android:exported="true"
+            android:label="@string/blank_activity_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name=".module.savingData.SavingDataActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="@string/saving_data_activity_name"/>
+            android:exported="true"
+            android:label="@string/saving_data_activity_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".module.fragmentTheme.FragmentThemeActivity"
+            android:exported="true"
+            android:label="@string/fragment_theme_activity_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 

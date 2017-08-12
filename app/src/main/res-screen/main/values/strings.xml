@@ -3,5 +3,6 @@
 
     <string name="main_button_open_blank">Open "Blank"</string>
     <string name="main_button_open_saving_data">Open "SavingData"</string>
+    <string name="main_button_open_fragment_theme">Open "FragmentTheme"</string>
 
 </resources>
