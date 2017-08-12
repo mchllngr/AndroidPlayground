@@ -17,9 +17,10 @@ import de.mchllngr.androidplayground.R;
 import de.mchllngr.androidplayground.base.BaseActivity;
 import de.mchllngr.androidplayground.util.FragmentStarter;
 
-public abstract class BaseSavingDataFragment extends Fragment {
+public abstract class BaseSavingDataFragment extends BaseSavingDataInFragmentFragment {
 
     @BindView(R.id.et_static) protected EditText etStatic;
+    @BindView(R.id.et_in_fragment) protected EditText etInFragment;
     @BindView(R.id.btn_saving_data) Button button;
 
     @StringRes
@@ -35,9 +36,9 @@ public abstract class BaseSavingDataFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
         ((BaseActivity) getActivity()).setActionBarTitle(getFragmentName());
-        super.onViewCreated(view, savedInstanceState);
     }
 
     @Override

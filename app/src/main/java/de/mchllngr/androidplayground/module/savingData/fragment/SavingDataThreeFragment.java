@@ -5,13 +5,14 @@ import android.support.annotation.StringRes;
 import android.widget.Toast;
 
 import de.mchllngr.androidplayground.R;
-import de.mchllngr.androidplayground.module.savingData.data.SavingDataStatic;
+import de.mchllngr.androidplayground.module.savingData.data.SavedInFragment;
+import de.mchllngr.androidplayground.module.savingData.data.SavedStatic;
 
 public class SavingDataThreeFragment extends BaseSavingDataFragment {
 
-    public static SavingDataThreeFragment newInstance() {
+    public static SavingDataThreeFragment newInstance(SavedInFragment savedInFragment) {
         Bundle args = new Bundle();
-
+        addSavedInFragmentToBundle(args, savedInFragment);
         SavingDataThreeFragment fragment = new SavingDataThreeFragment();
         fragment.setArguments(args);
         return fragment;
@@ -29,16 +30,14 @@ public class SavingDataThreeFragment extends BaseSavingDataFragment {
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-
-        etStatic.setText(SavingDataStatic.staticSavedString);
+    public void onSaveData() {
+        SavedStatic.staticSavedString = etStatic.getText().toString();
+        getDataSavedInFragment(false).savedInFragmentString = etInFragment.getText().toString();
     }
 
     @Override
-    public void onStop() {
-        SavingDataStatic.staticSavedString = etStatic.getText().toString();
-
-        super.onStop();
+    public void onRestoreData() {
+        etStatic.setText(SavedStatic.staticSavedString);
+        etInFragment.setText(getDataSavedInFragment(false).savedInFragmentString);
     }
 }

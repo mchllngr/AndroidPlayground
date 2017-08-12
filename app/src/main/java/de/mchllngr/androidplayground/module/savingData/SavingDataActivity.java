@@ -44,7 +44,8 @@ public class SavingDataActivity extends BaseActivity<SavingDataView, SavingDataP
         setSupportActionBar(toolbar);
         setActionBarTitle(R.string.saving_data_activity_name);
 
-        FragmentStarter.startFragment(getSupportFragmentManager(), SavingDataOneFragment.newInstance(), "SavingDataOneFragment", R.id.fl_fragment_container);
+        if (getSupportFragmentManager().getBackStackEntryCount() == 0)
+            FragmentStarter.startFragment(getSupportFragmentManager(), SavingDataOneFragment.newInstance(null), "SavingDataOneFragment", R.id.fl_fragment_container);
     }
 
     @NonNull

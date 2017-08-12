@@ -8,6 +8,7 @@
     <string name="saving_data_fragment_two_name">SavingData (2)</string>
     <string name="saving_data_fragment_three_name">SavingData (3)</string>
 
-    <string name="saving_data_hint_static">Static</string>
+    <string name="saving_data_hint_static">Saved static</string>
+    <string name="saving_data_hint_in_fragment">Saved in fragment</string>
 
 </resources>

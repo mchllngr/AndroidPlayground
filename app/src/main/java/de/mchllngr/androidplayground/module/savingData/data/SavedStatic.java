@@ -1,6 +1,6 @@
 package de.mchllngr.androidplayground.module.savingData.data;
 
-public class SavingDataStatic {
+public class SavedStatic {
 
     public static String staticSavedString = "default";
 }
