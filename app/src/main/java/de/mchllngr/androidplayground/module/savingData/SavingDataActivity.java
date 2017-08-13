@@ -45,7 +45,7 @@ public class SavingDataActivity extends BaseActivity<SavingDataView, SavingDataP
         setActionBarTitle(R.string.saving_data_activity_name);
 
         if (getSupportFragmentManager().getBackStackEntryCount() == 0)
-            FragmentStarter.startFragment(getSupportFragmentManager(), SavingDataOneFragment.newInstance(null), "SavingDataOneFragment", R.id.fl_fragment_container);
+            FragmentStarter.startFragment(getSupportFragmentManager(), SavingDataOneFragment.newInstance(null), SavingDataOneFragment.class.getSimpleName(), R.id.fl_fragment_container);
     }
 
     @NonNull

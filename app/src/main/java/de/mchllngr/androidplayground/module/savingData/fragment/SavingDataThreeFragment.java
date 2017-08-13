@@ -12,7 +12,7 @@ public class SavingDataThreeFragment extends BaseSavingDataFragment {
 
     public static SavingDataThreeFragment newInstance(SavedInFragment savedInFragment) {
         Bundle args = new Bundle();
-        addSavedInFragmentToBundle(args, savedInFragment);
+        addModelToBundle(args, savedInFragment);
         SavingDataThreeFragment fragment = new SavingDataThreeFragment();
         fragment.setArguments(args);
         return fragment;
@@ -30,14 +30,19 @@ public class SavingDataThreeFragment extends BaseSavingDataFragment {
     }
 
     @Override
-    public void onSaveData() {
-        SavedStatic.staticSavedString = etStatic.getText().toString();
-        getDataSavedInFragment(false).savedInFragmentString = etInFragment.getText().toString();
+    public void onSaveData(boolean isViewCreated) {
+        if (isViewCreated) {
+            SavedStatic.staticSavedString = etStatic.getText().toString();
+            getModel(false).savedInFragmentString = etInFragment.getText().toString();
+        }
     }
 
     @Override
-    public void onRestoreData() {
-        etStatic.setText(SavedStatic.staticSavedString);
-        etInFragment.setText(getDataSavedInFragment(false).savedInFragmentString);
+    public void onRestoreData(boolean isViewCreated) {
+        if (isViewCreated) {
+            SavedInFragment model = getModel(false);
+            etStatic.setText(SavedStatic.staticSavedString);
+            etInFragment.setText(model.savedInFragmentString);
+        }
     }
 }

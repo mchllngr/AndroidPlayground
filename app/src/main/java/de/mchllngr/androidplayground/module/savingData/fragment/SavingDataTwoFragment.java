@@ -11,7 +11,7 @@ public class SavingDataTwoFragment extends BaseSavingDataFragment {
 
     public static SavingDataTwoFragment newInstance(SavedInFragment savedInFragment) {
         Bundle args = new Bundle();
-        addSavedInFragmentToBundle(args, savedInFragment);
+        addModelToBundle(args, savedInFragment);
         SavingDataTwoFragment fragment = new SavingDataTwoFragment();
         fragment.setArguments(args);
         return fragment;
@@ -25,18 +25,23 @@ public class SavingDataTwoFragment extends BaseSavingDataFragment {
 
     @Override
     protected void onButtonClicked() {
-        openFragment(SavingDataThreeFragment.newInstance(getDataSavedInFragment(true)), "SavingDataThreeFragment");
+        openFragment(SavingDataThreeFragment.newInstance(getModel(true)), SavingDataThreeFragment.class.getSimpleName());
     }
 
     @Override
-    public void onSaveData() {
-        SavedStatic.staticSavedString = etStatic.getText().toString();
-        getDataSavedInFragment(false).savedInFragmentString = etInFragment.getText().toString();
+    public void onSaveData(boolean isViewCreated) {
+        if (isViewCreated) {
+            SavedStatic.staticSavedString = etStatic.getText().toString();
+            getModel(false).savedInFragmentString = etInFragment.getText().toString();
+        }
     }
 
     @Override
-    public void onRestoreData() {
-        etStatic.setText(SavedStatic.staticSavedString);
-        etInFragment.setText(getDataSavedInFragment(false).savedInFragmentString);
+    public void onRestoreData(boolean isViewCreated) {
+        if (isViewCreated) {
+            SavedInFragment model = getModel(false);
+            etStatic.setText(SavedStatic.staticSavedString);
+            etInFragment.setText(model.savedInFragmentString);
+        }
     }
 }
