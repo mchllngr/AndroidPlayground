@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fragment_theme_one_theme_color_accent">#e29700</color>
+    <color name="fragment_theme_one_theme_color_background">#50c00000</color>
+    <color name="fragment_theme_two_theme_color_accent">#e533e2</color>
+    <color name="fragment_theme_two_theme_color_background">#500099cc</color>
+    <color name="fragment_theme_three_theme_color_accent">#00c9cc</color>
+    <color name="fragment_theme_three_theme_color_background">#50669900</color>
+
+</resources>

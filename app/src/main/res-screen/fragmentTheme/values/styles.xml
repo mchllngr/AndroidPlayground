@@ -1,23 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="FragmentTheme.TextInputLayout.First" parent="Widget.Design.TextInputLayout">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <!-- One -->
+    <style name="FragmentTheme.One.Theme.Base" parent="AppTheme"/>
+
+    <style name="FragmentTheme.One.Theme" parent="FragmentTheme.One.Theme.Base">
+        <item name="colorAccent">@color/fragment_theme_one_theme_color_accent</item>
+        <item name="android:textViewStyle">@style/FragmentTheme.One.TextView</item>
+        <item name="editTextStyle">@style/FragmentTheme.One.EditText</item>
+        <item name="checkboxStyle">@style/FragmentTheme.One.CheckBox</item>
+        <item name="android:progressBarStyle">@style/FragmentTheme.One.ProgressBar</item>
+        <item name="radioButtonStyle">@style/FragmentTheme.One.RadioButton</item>
+        <item name="seekBarStyle">@style/FragmentTheme.One.SeekBar</item>
+        <item name="buttonStyle">@style/FragmentTheme.One.Button</item>
     </style>
 
-    <style name="FragmentTheme.TextInputLayout" parent="FragmentTheme.TextInputLayout.First">
-        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+    <style name="FragmentTheme.One.TextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/fragment_theme_one_theme_color_accent</item>
     </style>
 
-    <style name="FragmentTheme.EditText" parent="android:Widget.TextView">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="FragmentTheme.One.EditText" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/fragment_theme_one_theme_color_accent</item>
     </style>
 
-    <style name="FragmentTheme.Button" parent="AppTheme.Button">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="FragmentTheme.One.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/fragment_theme_one_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.One.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:background">@color/fragment_theme_one_theme_color_background</item>
+    </style>
+
+    <style name="FragmentTheme.One.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/fragment_theme_one_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.One.SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:background">@color/fragment_theme_one_theme_color_background</item>
+    </style>
+
+    <style name="FragmentTheme.One.Button" parent="AppTheme.Button">
+        <item name="android:background">@color/fragment_theme_one_theme_color_background</item>
+    </style>
+
+    <!-- Two -->
+    <style name="FragmentTheme.Two.Theme.Base" parent="AppTheme"/>
+
+    <style name="FragmentTheme.Two.Theme" parent="FragmentTheme.Two.Theme.Base">
+        <item name="colorAccent">@color/fragment_theme_two_theme_color_accent</item>
+        <item name="android:textViewStyle">@style/FragmentTheme.Two.TextView</item>
+        <item name="editTextStyle">@style/FragmentTheme.Two.EditText</item>
+        <item name="checkboxStyle">@style/FragmentTheme.Two.CheckBox</item>
+        <item name="android:progressBarStyle">@style/FragmentTheme.Two.ProgressBar</item>
+        <item name="radioButtonStyle">@style/FragmentTheme.Two.RadioButton</item>
+        <item name="seekBarStyle">@style/FragmentTheme.Two.SeekBar</item>
+        <item name="buttonStyle">@style/FragmentTheme.Two.Button</item>
+    </style>
+
+    <style name="FragmentTheme.Two.TextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/fragment_theme_two_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Two.EditText" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/fragment_theme_two_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Two.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/fragment_theme_two_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Two.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:background">@color/fragment_theme_two_theme_color_background</item>
+    </style>
+
+    <style name="FragmentTheme.Two.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/fragment_theme_two_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Two.SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:background">@color/fragment_theme_two_theme_color_background</item>
+    </style>
+
+    <style name="FragmentTheme.Two.Button" parent="AppTheme.Button">
+        <item name="android:background">@color/fragment_theme_two_theme_color_background</item>
+    </style>
+
+    <!-- Three -->
+    <style name="FragmentTheme.Three.Theme.Base" parent="AppTheme"/>
+
+    <style name="FragmentTheme.Three.Theme" parent="FragmentTheme.Three.Theme.Base">
+        <item name="colorAccent">@color/fragment_theme_three_theme_color_accent</item>
+        <item name="android:textViewStyle">@style/FragmentTheme.Three.TextView</item>
+        <item name="editTextStyle">@style/FragmentTheme.Three.EditText</item>
+        <item name="checkboxStyle">@style/FragmentTheme.Three.CheckBox</item>
+        <item name="android:progressBarStyle">@style/FragmentTheme.Three.ProgressBar</item>
+        <item name="radioButtonStyle">@style/FragmentTheme.Three.RadioButton</item>
+        <item name="seekBarStyle">@style/FragmentTheme.Three.SeekBar</item>
+        <item name="buttonStyle">@style/FragmentTheme.Three.Button</item>
+    </style>
+
+    <style name="FragmentTheme.Three.TextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/fragment_theme_three_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Three.EditText" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/fragment_theme_three_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Three.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/fragment_theme_three_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Three.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:background">@color/fragment_theme_three_theme_color_background</item>
+    </style>
+
+    <style name="FragmentTheme.Three.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/fragment_theme_three_theme_color_accent</item>
+    </style>
+
+    <style name="FragmentTheme.Three.SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:background">@color/fragment_theme_three_theme_color_background</item>
+    </style>
+
+    <style name="FragmentTheme.Three.Button" parent="AppTheme.Button">
+        <item name="android:background">@color/fragment_theme_three_theme_color_background</item>
     </style>
 
 </resources>

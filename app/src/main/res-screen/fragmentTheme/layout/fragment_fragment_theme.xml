@@ -76,7 +76,8 @@
 
     <Button
         android:id="@+id/btn_fragment_theme"
-        style="@style/FragmentTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="@string/fragment_theme_button_text"/>
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- One -->
+    <style name="FragmentTheme.One.Theme.Base" parent="AppTheme">
+        <item name="android:switchStyle">@style/FragmentTheme.One.Switch</item>
+    </style>
+
+    <style name="FragmentTheme.One.Switch" parent="android:Widget.Material.CompoundButton.Switch">
+        <item name="android:textColor">@color/fragment_theme_one_theme_color_accent</item>
+    </style>
+
+    <!-- Two -->
+    <style name="FragmentTheme.Two.Theme.Base" parent="AppTheme">
+        <item name="android:switchStyle">@style/FragmentTheme.Two.Switch</item>
+    </style>
+
+    <style name="FragmentTheme.Two.Switch" parent="android:Widget.Material.CompoundButton.Switch">
+        <item name="android:textColor">@color/fragment_theme_two_theme_color_accent</item>
+    </style>
+
+    <!-- Three -->
+    <style name="FragmentTheme.Three.Theme.Base" parent="AppTheme">
+        <item name="android:switchStyle">@style/FragmentTheme.Three.Switch</item>
+    </style>
+
+    <style name="FragmentTheme.Three.Switch" parent="android:Widget.Material.CompoundButton.Switch">
+        <item name="android:textColor">@color/fragment_theme_three_theme_color_accent</item>
+    </style>
+
+</resources>
