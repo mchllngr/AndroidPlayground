@@ -6,16 +6,15 @@ import de.mchllngr.androidplayground.base.BaseApp;
 import de.mchllngr.androidplayground.injection.ApplicationComponent;
 import de.mchllngr.androidplayground.injection.ApplicationModule;
 import de.mchllngr.androidplayground.injection.DaggerApplicationComponent;
+import de.mchllngr.androidplayground.util.SplashScreenHelper;
 
 /**
  * {@link App} for the {@link android.app.Application}
  */
 public class App extends BaseApp {
 
-    /**
-     * Sets the default night mode to follow system.
-     */
     static {
+        // Sets the default night mode to follow system.
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
     }
 
@@ -31,6 +30,8 @@ public class App extends BaseApp {
         applicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule())
                 .build();
+
+        registerActivityLifecycleCallbacks(new SplashScreenHelper());
     }
 
     /**
