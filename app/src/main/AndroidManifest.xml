@@ -56,6 +56,8 @@
                 android:resource="@style/AppTheme.NoActionBar"/>
         </activity>
 
+        <service android:name=".module.foregroundservice.ForegroundService"/>
+
     </application>
 
 </manifest>

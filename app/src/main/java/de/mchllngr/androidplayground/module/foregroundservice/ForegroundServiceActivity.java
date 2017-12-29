@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import de.mchllngr.androidplayground.R;
 import de.mchllngr.androidplayground.base.BaseActivity;
 import de.mchllngr.androidplayground.module.blank.BlankPresenter;
@@ -43,5 +44,19 @@ public class ForegroundServiceActivity extends BaseActivity<BlankView, BlankPres
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         setActionBarTitle(R.string.foreground_service_activity_name);
+    }
+
+    @OnClick(R.id.start)
+    public void onStartClick() {
+        Intent startIntent = new Intent(this, ForegroundService.class);
+        startIntent.setAction(ForegroundService.START_ACTION);
+        startService(startIntent);
+    }
+
+    @OnClick(R.id.stop)
+    public void onStopClick() {
+        Intent stopIntent = new Intent(this, ForegroundService.class);
+        stopIntent.setAction(ForegroundService.STOP_ACTION);
+        startService(stopIntent);
     }
 }
