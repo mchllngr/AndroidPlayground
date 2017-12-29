@@ -47,6 +47,15 @@
                 android:resource="@style/AppTheme.NoActionBar"/>
         </activity>
 
+        <activity
+            android:name=".module.foregroundservice.ForegroundServiceActivity"
+            android:exported="true"
+            android:label="@string/foreground_service_activity_name">
+            <meta-data
+                android:name="theme"
+                android:resource="@style/AppTheme.NoActionBar"/>
+        </activity>
+
     </application>
 
 </manifest>
