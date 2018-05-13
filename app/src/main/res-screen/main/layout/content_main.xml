@@ -35,4 +35,10 @@
         android:layout_below="@id/btn_main_open_fragment_theme"
         android:text="@string/main_button_open_foreground_service"/>
 
+    <Button
+        android:id="@+id/btn_main_open_donut"
+        style="@style/Main.Button"
+        android:layout_below="@id/btn_main_open_foreground_service"
+        android:text="@string/main_button_open_donut"/>
+
 </RelativeLayout>

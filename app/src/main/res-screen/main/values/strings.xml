@@ -5,5 +5,6 @@
     <string name="main_button_open_saving_data">Open "SavingData"</string>
     <string name="main_button_open_fragment_theme">Open "FragmentTheme"</string>
     <string name="main_button_open_foreground_service">Open "ForegroundService"</string>
+    <string name="main_button_open_donut">Open "Donut"</string>
 
 </resources>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="de.mchllngr.androidplayground">
 
     <application
         android:name=".App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme.Splash">
+        android:theme="@style/AppTheme.Splash"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
         <activity
             android:name=".module.main.MainActivity">
@@ -57,6 +59,15 @@
         </activity>
 
         <service android:name=".module.foregroundservice.ForegroundService"/>
+
+        <activity
+            android:name=".module.donut.DonutActivity"
+            android:exported="true"
+            android:label="@string/donut_activity_name">
+            <meta-data
+                android:name="theme"
+                android:resource="@style/AppTheme.NoActionBar"/>
+        </activity>
 
     </application>
 

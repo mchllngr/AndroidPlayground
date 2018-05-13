@@ -14,6 +14,7 @@ import butterknife.OnClick;
 import de.mchllngr.androidplayground.R;
 import de.mchllngr.androidplayground.base.BaseActivity;
 import de.mchllngr.androidplayground.module.blank.BlankActivity;
+import de.mchllngr.androidplayground.module.donut.DonutActivity;
 import de.mchllngr.androidplayground.module.foregroundservice.ForegroundServiceActivity;
 import de.mchllngr.androidplayground.module.fragmentTheme.FragmentThemeActivity;
 import de.mchllngr.androidplayground.module.savingData.SavingDataActivity;
@@ -74,5 +75,10 @@ public class MainActivity extends BaseActivity<MainView, MainPresenter> implemen
     @OnClick(R.id.btn_main_open_foreground_service)
     public void openForegroundServiceActivity() {
         ForegroundServiceActivity.start(this);
+    }
+
+    @OnClick(R.id.btn_main_open_donut)
+    public void openDonutActivity() {
+        DonutActivity.start(this);
     }
 }
