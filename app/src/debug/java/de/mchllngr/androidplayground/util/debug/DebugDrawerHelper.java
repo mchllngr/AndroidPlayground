@@ -80,15 +80,15 @@ public class DebugDrawerHelper {
 
         modules.add(new ActionsModule(getNightModeActionsModule()));
         modules.add(new ScalpelModule(activity));
-        if (withLocation) modules.add(new LocationModule(activity));
-        modules.add(new NetworkModule(activity));
+        if (withLocation) modules.add(new LocationModule());
+        modules.add(new NetworkModule());
         modules.add(new FpsModule(Takt.stock(activity.getApplication())));
-        modules.add(new BuildModule(activity));
-        modules.add(new DeviceModule(activity));
-        modules.add(new SettingsModule(activity));
+        modules.add(new BuildModule());
+        modules.add(new DeviceModule());
+        modules.add(new SettingsModule());
 
         debugDrawer = new DebugDrawer.Builder(activity)
-                .modules(modules.toArray(new DebugModule[modules.size()]))
+                .modules(modules.toArray(new DebugModule[0]))
                 .build();
     }
 
@@ -119,34 +119,5 @@ public class DebugDrawerHelper {
                     activity.recreate();
                 }
         );
-    }
-
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    public void onStart() {
-        debugDrawer.onStart();
-    }
-
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    public void onResume() {
-        debugDrawer.onResume();
-    }
-
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    public void onPause() {
-        debugDrawer.onPause();
-    }
-
-
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    public void onStop() {
-        debugDrawer.onStop();
     }
 }

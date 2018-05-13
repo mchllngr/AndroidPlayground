@@ -87,49 +87,6 @@ public abstract class DebugBaseActivity<V extends MvpView, P extends MvpBasePres
         debugDrawerHelper.initDebugDrawer(withLocation);
     }
 
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (debugDrawerHelper != null)
-            debugDrawerHelper.onStart();
-    }
-
-
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (debugDrawerHelper != null)
-            debugDrawerHelper.onResume();
-    }
-
-
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    @Override
-    protected void onPause() {
-        super.onPause();
-        if (debugDrawerHelper != null)
-            debugDrawerHelper.onPause();
-    }
-
-
-    /**
-     * Attach {@link DebugDrawer} to lifecycle.
-     */
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (debugDrawerHelper != null)
-            debugDrawerHelper.onStop();
-    }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         Let.handle(this, requestCode, permissions, grantResults);
